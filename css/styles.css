@@ -502,7 +502,7 @@ address {
     line-height: 1.7;
 }
 
-.foter-item {
+.foter-social {
     display: inline-flex;
     margin-left: 70px;
 }
@@ -542,6 +542,7 @@ address {
     background-color: var(--nav-color);
 }
 
+/* subscribe */
 .footer-input {
     display: inline-block;
     margin-top: 12px;
@@ -759,6 +760,7 @@ address {
     
     width: 100%;
     max-width: 528px;
+    max-height: 581px;
     background-color: var(--main-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -793,16 +795,24 @@ address {
     position: absolute;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
-    top: 6px;
-    right: 6px;
+    top: 14px;
+    right: 14px;
     fill: #000000;
     max-width: 18px;
     max-height: 18px;
+
+    cursor: pointer;
  }
- .button-svg:hover, 
- .button-svg:focus {
+
+.button-close:hover+.button-svg, 
+.button-close:focus+.button-svg {
     fill: var(--nav-color);
  }
+
+.button-svg:hover,
+.button-svg:focus{
+    fill: var(--nav-color);
+}
 /* form */
 .modal-form {
     display: block;
@@ -811,12 +821,13 @@ address {
 .modal-block {
     display: flex;
     flex-direction: column;
+}
+.modal-block:not(:last-child) {
     margin-top: 10px;
 }
 
  .modal-label {
     position: relative;
-    display: inline-block;
     margin-bottom: 4px;
 
     font-weight: 400;
@@ -824,6 +835,7 @@ address {
     letter-spacing: 0.01em;
     color: var(--secondary-text-color);
 }
+
 .modal-input {
     position: relative;    
     padding: 11px 12px 11px 40px;
@@ -847,7 +859,11 @@ address {
 }
 
 .textarea {
+    height: 120px;
+    width: 448px;
     padding: 12px 16px;
+
+    resize: none;
 }
  .textarea::placeholder {
     font-weight: 400;
@@ -892,12 +908,6 @@ address {
     margin-right: 7px;  
 }
 
-.modal-input-checkbox:checked + .chackbox-icon {
-    appearance: none;
-    width: 16px;
-    height: 15px;
-    background-image: url(../images/icons.svg#icon-icon-check);
-}
 .checkbox-icon {
     position: absolute;
     width: 16px;
@@ -905,6 +915,14 @@ address {
 
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-input-checkbox:checked + .chackbox-icon {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/icons.svg#icon-icon-check);
+}
+
 .checkbox-deal {
     color: var(--nav-color);
     text-decoration: underline;

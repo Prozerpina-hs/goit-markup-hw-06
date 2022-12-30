@@ -323,27 +323,24 @@
     
     <!-- Подвал -->
     <footer class="footer-style">
-        <div class="container">
-            <ul class="footer-flex">
-                <li>
-                    <a href="#" class="foot logo"><span class="logo-blue">Web</span>Studio</a>
-                    <!-- Адрес-подвал class="foot-address" -->
-                    <address>
-                        <ul>
-                            <li>
-                                <a href="https://goo.gl/maps/4996Xed7HbbkdrFU8" target="_blank" rel="nofollow noopener noreferrer" class="foot-add-map">
-                                м. Київ, пр-т Лесі Українки, 26 </a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@devstudio.com" target="_blank" class="foot-add-link">info@devstudio.com</a>   
-                            </li>
-                            <li>
-                                <a href="tel:+380961111111" target="_blank" class="foot-add-link">+38 096 111 11 11</a>
-                            </li>
-                        </ul>
-                    </address>
-                </li>
-                <li class="foter-item">
+        <div class="container footer-flex">
+           <div>
+                <a href="#" class="foot logo"><span class="logo-blue">Web</span>Studio</a>
+                <address>
+                    <ul>
+                        <li>
+                            <a href="https://goo.gl/maps/4996Xed7HbbkdrFU8" target="_blank" rel="nofollow noopener noreferrer" class="foot-add-map">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" target="_blank" class="foot-add-link">info@devstudio.com</a>   
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" target="_blank" class="foot-add-link">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="foter-social">
                     <div class="footer social-conteiner">
                         <h3 class="footer-social-name">Приєднуйтесь</h3>
                         <ul class="footer social-list"> 
@@ -369,8 +366,8 @@
                             </li>
                         </ul>
                     </div>
-                </li> 
-                <li class="footer-input">
+            </div> 
+                <div class="footer-input">
                     <h3 class="footer-input-text">Підпишіться</h3>
                     <form class="footer-form">
                         <input class="subscribe-input" type="email" name="subscribe-input" id="subscribe-input" placeholder="E-mail">
@@ -380,19 +377,17 @@
                             </svg>
                         </button>
                     </form>  
-                </li>
-            </ul>
+            </div>
         </div>
     </footer>
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <button class="button-close" type="button" data-modal-close>
-                <svg class="button-svg" width="30" height="30">
-                    <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <button class="button-close" type="button" data-modal-close></button>
+            <svg class="button-svg" width="30" height="30">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
             <form class="modal-form">
                 <div class="modal-block">
                     <label class="modal-label" for="user-name">Ім'я</label>
@@ -420,9 +415,9 @@
                 
                 <div class="modal-block">
                     <label class="modal-label" for="comment">Коментар</label>
-                    <textarea class="textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                    <textarea class="textarea" name="comment" id="comment" height="581" placeholder="Введіть текст"></textarea>
                 </div>
-                <div class="modal-block">
+                <div>
                     <label class="modal-label checkbox">
                         <input class="modal-input-checkbox" type="checkbox" name="deal" value="checkbox-deal">      Погоджуюся з розсилкою та приймаю 
                         <a href="" class="checkbox-deal">Умови договору</a>
@@ -430,13 +425,10 @@
                         </span>
                     </label>
                 </div>
-               
                 <button class="modal-buttom" type="submit" value="Відправити">Відправити</button>
-
             </form>
-        
         </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./JS/modal.js"></script>
 </body>
 </html>
