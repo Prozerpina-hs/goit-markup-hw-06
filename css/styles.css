@@ -502,7 +502,7 @@ address {
     line-height: 1.7;
 }
 
-.foter-social {
+.footer-social {
     display: inline-flex;
     margin-left: 70px;
 }
@@ -903,9 +903,10 @@ address {
 }
 
 .modal-input-checkbox {
+    align-self: center;
     height: 15px;
     width: 16px;
-    margin-right: 7px;  
+    margin-right: 7px;
 }
 
 .checkbox-icon {
