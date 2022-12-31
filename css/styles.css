@@ -801,6 +801,7 @@ address {
     max-width: 18px;
     max-height: 18px;
 
+    pointer-events: none;
     cursor: pointer;
  }
 
@@ -822,7 +823,7 @@ address {
     display: flex;
     flex-direction: column;
 }
-.modal-block:not(:last-child) {
+.modal-block:not(:first-child) {
     margin-top: 10px;
 }
 
