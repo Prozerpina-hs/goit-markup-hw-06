@@ -267,7 +267,6 @@ img {
 .peculiarities-icon-item {
     display: flex;
     margin-bottom: 30px;
-    content: "";
     background-repeat: no-repeat;
     background-color: #F5F4FA;
     height: 120px;
@@ -350,13 +349,11 @@ img {
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
- }
+}
 
- .team-cards {
+.team-cards {
     padding: 30px;
- }
-
-
+}
 
 .team-name {
     color: var(--primary-text-color);
@@ -416,7 +413,6 @@ img {
     border-radius: 50%;
 }
 
-
 /* Постійні клієнти */
 .client-list {
     display: flex;
@@ -459,13 +455,14 @@ img {
 
 /* Подвал */
 
-.footer-flex {
-    display: flex;
-}
-
 .footer-style {
     padding: 60px 0;
     background-color: var(--secondary-background-color);
+}
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
 }
 
 .foot.logo {
@@ -490,6 +487,7 @@ address {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .foot-add-link {
     display: block;
     margin-top: 9px;
@@ -502,14 +500,10 @@ address {
     line-height: 1.7;
 }
 
-.footer-social {
-    display: inline-flex;
-    margin-left: 70px;
-}
-
+/* footer social */
 .footer.social-conteiner {
     padding: 0;
-    margin-top: 12px;
+    margin-left: 70px;
 }
 
 .footer-social-name, 
@@ -543,12 +537,12 @@ address {
 }
 
 /* subscribe */
+
 .footer-input {
     display: inline-block;
-    margin-top: 12px;
-    margin-bottom: 94px;
     margin-left: 93px;
 }
+
 .footer-form {
     display: flex;
     margin-top: 20px;
@@ -709,6 +703,7 @@ address {
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .signature {
     padding: 20px 24px;
 
@@ -717,6 +712,7 @@ address {
     border-left:1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
+
 .project-name {
     margin-bottom: 4px;
      
@@ -767,7 +763,9 @@ address {
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
-
+.modal.window {
+    position: relative;
+}
 .modal-title {
     font-weight: 700;
     font-size: 20px;
@@ -777,58 +775,54 @@ address {
     color: var(--primary-text-color);
 }
 
-.button-close {
+.modal-button-close {
     position: absolute;
+    display: flex;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
-
+    justify-content: center;
+    align-items: center;
+    
     background-color: var(--main-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     
     cursor: pointer;
- }
+}
 
- .button-svg {
-    position: absolute;
+.button-svg {
+    display: inline-flex;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
-    top: 14px;
-    right: 14px;
-    fill: #000000;
+    fill: currentColor;
     max-width: 18px;
     max-height: 18px;
 
-    pointer-events: none;
     cursor: pointer;
- }
-
-.button-close:hover+.button-svg, 
-.button-close:focus+.button-svg {
-    fill: var(--nav-color);
- }
-
-.button-svg:hover,
-.button-svg:focus{
-    fill: var(--nav-color);
 }
+
+.modal-button-close:focus .button-svg,
+.modal-button-close:hover .button-svg {
+    fill: var(--nav-color);
+} 
 /* form */
 .modal-form {
     display: block;
 }
 
 .modal-block {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
+
 .modal-block:not(:first-child) {
     margin-top: 10px;
 }
 
  .modal-label {
-    position: relative;
     margin-bottom: 4px;
 
     font-weight: 400;
@@ -838,7 +832,6 @@ address {
 }
 
 .modal-input {
-    position: relative;    
     padding: 11px 12px 11px 40px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -846,10 +839,9 @@ address {
 
 .form-svg {
     position: absolute;
-    z-index: 1;
-    left: 10%;
-
-    transform: translateY(165%);
+    top: 50%;
+    left: 12px;
+    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -895,11 +887,15 @@ address {
     outline: 1px solid var(--nav-color);
 }
 
+.modal-checkbox {
+    margin-top: 20px;
+
+}
 
 .modal-label.checkbox {
     display: flex;
     margin-bottom: 0;
-    margin-top: 20px;
+    justify-content: center;
     align-items: flex-end;
 
     cursor: pointer;

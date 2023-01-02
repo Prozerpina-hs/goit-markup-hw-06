@@ -324,7 +324,7 @@
     <!-- Подвал -->
     <footer class="footer-style">
         <div class="container footer-flex">
-           <div>
+            <div>
                 <a href="#" class="foot logo"><span class="logo-blue">Web</span>Studio</a>
                 <address>
                     <ul>
@@ -340,53 +340,51 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer-social">
-                    <div class="footer social-conteiner">
-                        <h3 class="footer-social-name">Приєднуйтесь</h3>
-                        <ul class="footer social-list"> 
-                            <li class="footer social-item">
-                                <a href="#" class="footer social-link">
-                                    <svg class="footer social-icon" width="20px" height="20px"><use href="./images/icons.svg#icon-instagram"></use></svg>
-                                </a>
-                            </li> 
-                            <li class="footer social-item">
-                                <a href="#" class="footer social-link">
-                                    <svg class="footer social-icon" width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg>
-                                </a>
-                            </li>
-                            <li class="footer social-item">
-                                <a href="#" class="footer social-link">
-                                    <svg class="footer social-icon" width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg>
-                                </a>
-                            </li>
-                            <li class="footer social-item">
-                                <a href="#" class="footer social-link">
-                                    <svg class="footer social-icon" width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-            </div> 
-                <div class="footer-input">
-                    <h3 class="footer-input-text">Підпишіться</h3>
-                    <form class="footer-form">
-                        <input class="subscribe-input" type="email" name="subscribe-input" id="subscribe-input" placeholder="E-mail">
-                        <button type="button" class="subscribe">Підписатися
-                            <svg class="" width="24" height="24">
-                                <use href="./images/icons.svg#icon-send-email"></use>
-                            </svg>
-                        </button>
-                    </form>  
+            <div class="footer social-conteiner">
+                <h3 class="footer-social-name">Приєднуйтесь</h3>
+                <ul class="footer social-list"> 
+                    <li class="footer social-item">
+                        <a href="#" class="footer social-link">
+                            <svg class="footer social-icon" width="20px" height="20px"><use href="./images/icons.svg#icon-instagram"></use></svg>
+                        </a>
+                    </li> 
+                    <li class="footer social-item">
+                        <a href="#" class="footer social-link">
+                            <svg class="footer social-icon" width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="footer social-item">
+                        <a href="#" class="footer social-link">
+                            <svg class="footer social-icon" width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg>
+                        </a>
+                    </li>
+                    <li class="footer social-item">
+                        <a href="#" class="footer social-link">
+                            <svg class="footer social-icon" width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-input">
+                <h3 class="footer-input-text">Підпишіться на розсилку</h3>
+                <form class="footer-form">
+                    <input class="subscribe-input" type="email" name="subscribe-input" id="subscribe-input" placeholder="E-mail">
+                    <button type="button" class="subscribe">Підписатися
+                        <svg class="" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send-email"></use>
+                        </svg>
+                    </button>
+                </form>  
             </div>
         </div>
     </footer>
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+        <div class="modal window">
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-            <button class="button-close" type="button" data-modal-close></button>
+            <button class="modal-button-close" type="button" data-modal-close>
             <svg class="button-svg" width="30" height="30"><use href="./images/icons.svg#icon-close-black"></use>
-            </svg>
+            </svg></button>
             <form class="modal-form">
                 <div class="modal-block">
                     <label class="modal-label" for="user-name">Ім'я</label>
@@ -416,7 +414,7 @@
                     <label class="modal-label" for="comment">Коментар</label>
                     <textarea class="textarea" name="comment" id="comment" placeholder="Введіть текст"></textarea>
                 </div>
-                <div>
+                <div class="modal-checkbox">
                     <label class="modal-label checkbox">
                         <input class="modal-input-checkbox" type="checkbox" name="deal" value="checkbox-deal">      Погоджуюся з розсилкою та приймаю 
                         <a href="" class="checkbox-deal">Умови договору</a>
